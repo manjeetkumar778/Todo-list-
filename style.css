@@ -1,0 +1,196 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+.container {
+  width: 420px;
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  color: #fff;
+  transition: 0.3s;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#add-btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+#add-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(102,126,234,0.5);
+}
+
+
+#search {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.filters button {
+  flex: 1;
+  margin: 2px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.filters button:hover {
+  background: #667eea;
+}
+
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.08);
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  animation: fadeIn 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.15);
+}
+
+
+input[type="checkbox"] {
+  accent-color: #667eea;
+  transform: scale(1.2);
+}
+
+
+li span {
+  flex: 1;
+  font-size: 14px;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+li button {
+  background: transparent;
+  color: #ff6b6b;
+  font-size: 16px;
+}
+
+li button:hover {
+  color: #ff3b3b;
+  transform: scale(1.2);
+}
+
+
+#counter {
+  font-size: 12px;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+
+
+#empty {
+  text-align: center;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+#theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #667eea;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body.dark {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+body.dark .container {
+  background: white;
+  color: black;
+}
+
+body.dark input {
+  background: #eee;
+  color: black;
+}
+
+body.dark li {
+  background: #f1f1f1;
+}
+
+body.dark .filters button {
+  background: #ddd;
+  color: black;
+}
