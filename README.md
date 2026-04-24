@@ -29,8 +29,8 @@ This app helps users manage daily tasks with a clean UI and smooth user experien
 
 ## 🌐 Live Demo
 
-👉 Add your deployed link here:
-`https://your-app-link.netlify.app`
+👉 Todo list link here:
+`https://manjeetkumar778.github.io/Todo-list-/`
 
 ---
 
