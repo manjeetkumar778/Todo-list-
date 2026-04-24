@@ -18,26 +18,14 @@ This app helps users manage daily tasks with a clean UI and smooth user experien
 * 💾 Persistent storage using LocalStorage
 * 🎨 Modern UI with animations
 
----
-
 ## 🛠️ Tech Stack
 
 * HTML5
-* CSS3 (Glassmorphism UI + Animations)
-* JavaScript (DOM Manipulation & LocalStorage)
-
----
+* CSS3
+* JavaScript
 
 ## 📸 Screenshot
 
-> Add your project screenshot here
-> (Upload image in repo and paste like below)
-
-```md
-![App Screenshot](./screenshot.png)
-```
-
----
 
 ## 🌐 Live Demo
 
